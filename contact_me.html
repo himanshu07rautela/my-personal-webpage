@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>contact me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <!-- css/styles.css -->
+</head>
+
+<body>
+    <!-- <img src="tripti.gif" alt="welcome"> -->
+    <center>
+        <span class="class1">
+            <h1 style="color: royalblue;">HEllo Welcome There to IIIT kota </h1>
+        </span>
+        <p style="font-size: 20px;">hello Everyone Iam student here at IIIT kota</p>
+        <p style="font-size: 20px;">NAME=himanshu rautela</p>
+
+        <p style="font-size: 20px;">ROLL number=2022kuec2003</p>
+        <p style="font-size: 20px;"> PHONE NUMBER=7453885204</p>
+        <h2 style="color: royalblue;">you can fill this form if you want to contact the institute</h2>
+        <form action="mailto:rohithaaris01072003@gmail.com" method="post" enctype="text/plain">
+            <!-- mailto: will tke  me to the mail -->
+            <!-- action will where to take user when we hit submit-->
+            <label for="name" style="font-size: 20px;">NAME</label>
+            <!-- label ke andar hume wo linkna hai jo hume puchna  hai user se -->
+
+
+
+
+
+
+
+
+
+
+            <input type="text" name="name" id="">
+            <hr>
+
+            <label for="branch" style="font-size: 20px;">Select your branch</label>
+
+            <select name="branch" id="branch">
+                <option value="ECE">Electronics and Communication Engineering </option>
+                <option value="CSE">Computer Science Engineering</option>
+
+            </select>
+
+
+
+
+
+            <!-- fir input se hume input milega -->
+            <label></label>
+            <!-- delete valuer attribute in case of submit -->
+            <br>
+            <hr>
+            <label style="font-size: 20px;">Your suggestion towards improvement of institute </label>
+            <br>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <label></label>
+            <!-- name inside input is important so dekh lena -->
+            <hr>
+            <label style="font-size: 20px;">do you wanna talk to me on my proffesional email</label>
+            <input type="checkbox" name="willingness to talk" id="">
+
+            <hr>
+            <label style="font-size: 20px;">Your email</label>
+            
+            <input type="email" name="email">
+            <hr>
+            <button class="submit">Submit</button>
+            <!-- to basically label se hum text daal denge aur fir input
+        ya text area se maze lenge -->
+            <br>
+            <!-- jo tum enter karoge wo email nahi jayega 
+        jis mil se tumkne abhi login kara hoga wahi jayega 
+    par email wale input me  name me mail likhkar bhi kaam ho skata hai -->
+
+        </form>
+
+
+        <form class="form" action="mailto:rohithaaris01072003@gmail.com" method="post">
+
+            <p class="title" style="font-size: 20px;">Register, upcoming students </p>
+            <p class="message" style="font-size: 20px;">Welcome future juniors , i hope you are doing fine </p>
+            <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span style="font-size: 20px;">Firstname</span>
+                </label>
+
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span style="font-size: 20px;">Lastname</span>
+                </label>
+            </div>
+
+            <label>
+                <input required="" placeholder="" type="email" class="input">
+                <span style="font-size: 20px;">Email</span>
+            </label>
+
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span style="font-size: 20px;">Aaadhar number</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input">
+                <span style="font-size: 20px;">PAN card number</span>
+            </label>
+            <button class="submit">Submit</button>
+            <p class="signin" style="font-size: 20px;">Visit our official website <a
+                    href="https://iiitkota.ac.in/">Signin</a> </p>
+        </form>
+    </center>
+
+
+
+
+
+
+</body>
+
+</html>
