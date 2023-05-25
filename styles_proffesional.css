@@ -1,0 +1,226 @@
+.class1{
+    background-color:#caf4ee; 
+    margin-top: 20px;
+    display:inline-block;
+    display: relative;
+}
+
+/* just like this we can make a rectangular block to apply color */
+h1{
+    margin-top: 0;
+    font-family: 'Sacramento', cursive;
+    font-size:40px;
+    text-decoration: underline;
+    /* dyanmically sized text is one styled with % and em and px se sized with static */
+    color: #66BFBF;
+    
+}
+
+/* jo space aa rahi rhi thi wo hi because of top margin cause it takes some space */
+/* browser inserts its own css things */
+/* just inspect karo aur body aur baki sare element ko inspect karo aur dekh lo margin and other things */
+body{
+    background-color:white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: #40514c;
+   
+    font-family: 'Alkatra', cursive;
+}
+/* we can do margin as 0, 0,0,0 okay it will tell as about top bottom , left, and right */
+/* we can do box model */
+/* height se box tumhara top to bottom expand karega
+aur width se left to right,and we can also specify border too 
+border tumahri specified space ko nahi khaega,extra space khaega, specifly clockwise top, right, bottom, left
+like 20px,20px,10px, 67px*/ 
+/* padding is the space between the border and text as simple as that, and padding existing space nahi kahata 
+space bada deta hai */
+/* margin , similarly margin is the buffer zone between 2 div , aur elements defined simply */
+/* that whole structure is known as a box model while inspecting any thing in html webpage */
+
+/* .class4{
+    background-color:#57C5B6;
+    margin-left: 400px;
+    width: 160px;
+    height: 160px;
+    border-top: 20px;
+    border-right: 20px;
+    border-bottom: 20px;
+    border-left: 20px;
+    border-color: black;
+    border-style: solid;
+
+
+} */
+/* block elements take up the whole width 
+while inline doesn"t take up whole width like img */
+/* so agar we want to make it non block what we need to do is display ko inline kar do */
+.niche_wala_cloud{
+    position: absolute;
+    left: 500px;
+    top:300px;
+}
+/* we will make it more better next day */
+.cloud{
+   
+    position:absolute;
+    /* when positioning is absolute it will only care about its postion with repect to parent */
+    left: 900px;
+    top: 300px;
+}
+/* Relative - the element is positioned relative to its normal position.
+ Absolute - the element is positioned absolutely to its first positioned parent.
+ Fixed - the element is positioned related to the browser window.
+  Sticky - the element is positioned based on the user's scroll position. */
+.underline{
+    text-decoration: underline;
+}
+/* children sit on the top of parent , just like img on div */
+/* .red{
+    background-color: red;
+    width: 100px;
+    height:100px;
+    display: absolute; 
+    /* display absolute karke kya hoga ki */
+    /* right: 400px;
+    top:100px;
+
+}
+.yellow{
+    background-color: yellow;
+    width: 100px;
+    height:100px;
+    display: absolute; 
+     margin-left:100px ;
+     
+}
+.green{
+    background-color: green;
+    width: 100px;
+    height:100px;
+    display: absolute; 
+    margin-left: 200px;
+    
+
+} */ 
+/*  a divission can have a parent divsion and can dramatically change the behavior of our website */
+/* in the similar way we have a fixed tag  which fixes the elements and their position will not change 
+even if we scroll through the webpage */
+/* text alingn se auto karenge toh apne aap centre me aaega jaise
+in case agar humne ksi block element ko chota kar diya then ye hoga
+h1{
+    margin:0 auto 0 auto;
+ } */
+ .frame{
+    background-color: #dbf3e3;
+    margin-bottom: 50px;
+ }
+ .underline{
+    text-decoration: underline;
+    color: blue;
+
+
+ }
+ .white{
+    background-color: white;
+ }
+ hr{
+    
+    border-style:dotted none none;
+    border-color: rgb(190, 195, 196);
+    /* to make website like stephen harpin */
+    /* whwn 1 value is applied it is applied to all 4 sides of a border,
+    when 2 values are appliesit is applied to 1 to top and bottom and 2 nd to left and right
+    when 3 values are assigned then 1st to the top and 2 nd to the left and right , 3rd to the bottom
+    but we can also use bordertop style is dotted and rest are none */
+    width:5%;
+    /* ye jo width hai ye screen wali width hai  */
+    /* lets change the size of dots */
+    border-width: 5px;
+    /* yaha bade dots aa jayenge
+     */
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+ h2{
+    display: inline-block;
+    margin-top: 20px;
+
+ }
+ /* static sizing is not inherit like px , but on the other hand % and em is dyanamic */
+ h3{
+    font-weight: normal;
+    text-decoration: underline;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+ }
+ .skill-row{
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   text-align: left;
+   line-height: 2;
+
+ }
+ .profile{
+    width: 50%;
+ }
+ .badminton{
+    width: 33%;
+    float: left;
+    margin-right: 20px;
+    /* isse image left me aa jayegi aur float karegi */
+ }
+ /* toh images gif aur baki sab ke liye use float instead of text align */
+ /* also there is a property called clear left */
+ .chess{
+    width:33%;
+    float: right;
+    margin-left: 20px;
+ }
+ .middle-container{
+    margin-top: 20px;
+ }
+ .intro{
+    width: 40%;
+
+ }
+ p{
+    line-height: 2;
+ }
+ .contact-me{
+    width: 40%;
+    margin: 50px auto 50px;
+ }
+ .btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+  .foot{
+    height: 50px;
+  }
